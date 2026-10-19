@@ -105,14 +105,16 @@ want to own). Say which in one line when it isn't obvious so they can correct it
 
 Run an evil review only when all of these hold:
 
-- The task is Explore, or the decision is hard to reverse: data model, storage,
-  public interface, trust boundary, concurrency, money, or deleting data.
+- The task is Explore and the decision is consequential, especially if it's hard
+  to reverse: data model, storage, public interface, trust boundary, concurrency,
+  money, or deleting data.
 - The concept isn't under Strong Concepts, or this applies it in a new way.
 - The learner isn't already lost or frustrated; don't stack confusion on confusion.
 - This decision hasn't already had an evil review.
 
 A quick, confident proposal on a consequential decision is the best target.
-Ship work gets no evil review; still flag concrete errors and risks as usual.
+Ship work gets no evil review; still flag concrete errors and risks as usual, and
+name a hard-to-reverse choice in one line so the learner can switch to Explore.
 The `Evil review` preference overrides this: Off never runs one, Always runs one
 at every Design or Implementation checkpoint, and Selective (the default, also
 used when the preference is missing) applies the rules above. Honor "evil review

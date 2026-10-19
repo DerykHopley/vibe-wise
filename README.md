@@ -258,7 +258,8 @@ says so instead of inventing doubt.
 
 Friction only helps when it buys understanding, so the default (Selective) is
 picky about when it runs. It treats chores and "just get it done" tasks as Ship work
-and skips them. It also skips reversible decisions, concepts you've already shown
+and skips them, though it will name a hard-to-reverse choice in one line so you can
+opt in. It also skips reversible decisions, concepts you've already shown
 you understand, and moments when you're already lost. It aims at hard-to-reverse
 choices like data models, storage, interfaces, and trust boundaries, especially
 when you proposed one quickly and confidently. Set it to Always or Off anytime.
