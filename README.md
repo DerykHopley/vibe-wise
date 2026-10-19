@@ -246,6 +246,22 @@ are with the stack. Checkpoint frequency—Light, Normal, or Frequent—is separ
 - “Use multiple-choice questions.”
 - “Just implement this one.”
 - “Pause learning.” Resume with `/vibe-wise:learn`.
+- “Evil review this.” / “No evil review.” / “Just ship it.” / “Push me on this one.”
+
+### Evil review
+
+Before you sign off on a consequential design, the AI may switch roles and try to
+break it: a pre-mortem with up to three concrete failure scenarios drawn from
+your project. You defend, revise, or knowingly accept each risk in your own words,
+and the AI gives a verdict before moving on. If it can't break your design, it
+says so instead of inventing doubt.
+
+Friction only helps when it buys understanding, so the default (Selective) is
+picky about when it runs. It treats chores and "just get it done" tasks as Ship work
+and skips them. It also skips reversible decisions, concepts you've already shown
+you understand, and moments when you're already lost. It aims at hard-to-reverse
+choices like data models, storage, interfaces, and trust boundaries, especially
+when you proposed one quickly and confidently. Set it to Always or Off anytime.
 
 Preferences, learning notes, and a project map live in `.vibe-wise/` in your project. In a Git repository, that's the repository root, and VibeWise finds it from any subfolder. Without Git, it's the folder you start in, so always start from your project's top folder. Learning mode resumes in future sessions and after compaction. Add `.vibe-wise/` to your `.gitignore` to keep your notes out of Git; the plugin won't change it silently.
 

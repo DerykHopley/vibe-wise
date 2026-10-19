@@ -171,6 +171,17 @@ For a manual walkthrough based on the playground notes app, see the
     inspect the notes: unmentioned fields, lifecycle behavior, alternatives, and
     rationale must remain unresolved, not appear as agreed design or learner reasoning.
 
+17. **Evil review gating:** With Selective, give a quick, confident storage
+    design. Claude should run an `✦ Evil review` with at most three concrete,
+    project-specific failure scenarios, no hinted fixes, and an open question.
+    Defend one attack, revise one, and accept one; check the per-attack verdict,
+    that a sound defense isn't re-attacked, and that the accepted risk lands in
+    the map's Unknowns. Then check what shouldn't trigger it: a rename or config
+    tweak, "just get it done", a concept under Strong Concepts, a design that's
+    already been reviewed, and "I'm completely lost" (it should teach instead).
+    Give a sound design: Claude should say it couldn't break it, not invent flaws.
+    Off never reviews; Always reviews at every confirmation.
+
 Do not commit `.vibe-wise/` or test transcripts. The plugin recommends an
 ignore rule during onboarding, but changes `.gitignore` only after telling the
 user and receiving their instruction to make the edit.

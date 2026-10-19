@@ -50,9 +50,11 @@ Ask only what's unknown, one question at a time:
   - Customize — Adjust frequency, question style, or who writes the code.
 
 Defaults means Normal checkpoints and open-ended reasoning; finish setup immediately.
-Customize asks frequency (Light / Normal /
-Frequent), reasoning style (Open-ended / Multiple choice / Mixed), and coding
-preference (AI writes / A mix / More hands-on), each in a separate picker. Reasoning
+Defaults also mean Selective evil review. Customize asks frequency (Light / Normal /
+Frequent), reasoning style (Open-ended / Multiple choice / Mixed), coding
+preference (AI writes / A mix / More hands-on), and evil review (Selective / Always
+/ Off), each in a separate picker. Describe evil review as the AI trying to break
+consequential designs before code is written. Reasoning
 style doesn't change setup pickers. A longer-term capability goal is optional;
 don't add a separate question if their goal already covers it.
 

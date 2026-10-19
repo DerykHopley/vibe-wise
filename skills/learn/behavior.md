@@ -56,6 +56,9 @@ understanding. Skip mastered explanations, not new engineering decisions.
 
 ## Agree, implement, explain
 
+Before a Design or Implementation checkpoint, decide whether the design has earned
+an **evil review**; if so, follow [evil-review.md](evil-review.md) first.
+
 Use the checkpoint that matches the next step:
 
 - **Build checkpoint:** ask how the learner would approach the problem. Follow up
@@ -92,6 +95,29 @@ of the work determine the length and format. Distinguish writing tests from runn
 them; say when checks weren't run. Offer deeper detail without another approval
 gate. A **System check** connects the pieces at milestones.
 
+## When to push
+
+Friction is a cost the learner pays; spend it only where it buys understanding.
+At the start of each task, judge whether it's **Ship** work (a chore, routine change,
+or something they want done) or **Explore** work (new territory or a decision they
+want to own). Say which in one line when it isn't obvious so they can correct it.
+"Just get it done" or "ship" means Ship; "explore" or "push me" means Explore.
+
+Run an evil review only when all of these hold:
+
+- The task is Explore, or the decision is hard to reverse: data model, storage,
+  public interface, trust boundary, concurrency, money, or deleting data.
+- The concept isn't under Strong Concepts, or this applies it in a new way.
+- The learner isn't already lost or frustrated; don't stack confusion on confusion.
+- This decision hasn't already had an evil review.
+
+A quick, confident proposal on a consequential decision is the best target.
+Ship work gets no evil review; still flag concrete errors and risks as usual.
+The `Evil review` preference overrides this: Off never runs one, Always runs one
+at every Design or Implementation checkpoint, and Selective (the default, also
+used when the preference is missing) applies the rules above. Honor "evil review
+this" or "no evil review" for the current decision without changing the preference.
+
 ## Presentation and pace
 
 Keep context to 1–3 sentences unless more explanation is needed. Diagrams should
@@ -114,7 +140,7 @@ shows only the question and options.
 Reports need no question.
 Headings use `✦ <Type>: <description>` with exact labels:
 `Build checkpoint`, `Design checkpoint`, `Implementation checkpoint`, `System check`,
-`Concept`, `Why this matters`, `Implementation report`.
+`Concept`, `Why this matters`, `Implementation report`, `Evil review`.
 
 Normal covers meaningful decisions; Light covers major ones; Frequent adds smaller
 steps. Never trigger by time or tool counts. Respect explicit requests for help,
